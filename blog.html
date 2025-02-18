@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บล็อก</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* เพิ่มสไตล์สำหรับส่วนของรีวิว */
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .review {
+            background: #444;
+            border: 2px solid #777;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .review:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .review h3 {
+            font-size: 1.5rem;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+
+        .review p {
+            font-size: 1rem;
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+        .review-footer {
+            font-size: 0.9rem;
+            color: #ff9900;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="services.html">บริการ</a></li>
+                <li><a href="blog.html">บล็อก</a></li>
+                <li><a href="contact.html">ติดต่อเรา</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>บทความในบล็อก</h1>
+            <p>ติดตามข่าวสารและบทความใหม่ๆ ได้ที่นี่</p>
+            
+            <!-- รีวิวจากลูกค้า -->
+            <div class="reviews">
+                <div class="review">
+                    <h3>ลูกค้า 1</h3>
+                    <p>“บริการของเว็บไซต์นี้ยอดเยี่ยมมาก! การสั่งซื้อสินค้ารวดเร็วและไม่ยุ่งยาก ทำให้ฉันมั่นใจที่จะใช้บริการต่อไปในอนาคต”</p>
+                    <div class="review-footer">- คุณสุกัญญา</div>
+                </div>
+                <div class="review">
+                    <h3>ลูกค้า 2</h3>
+                    <p>“เว็บไซต์ใช้งานง่ายมาก ข้อมูลที่ได้ก็มีความแม่นยำ พนักงานบริการดีเยี่ยม ฉันจะบอกต่อให้เพื่อนๆ ใช้บริการ!”</p>
+                    <div class="review-footer">- คุณสมชาย</div>
+                </div>
+                <div class="review">
+                    <h3>ลูกค้า 3</h3>
+                    <p>“บริการดีเยี่ยม ระบบการชำระเงินรวดเร็วและปลอดภัย พอใจมากกับประสบการณ์ที่ได้รับจากเว็บไซต์นี้”</p>
+                    <div class="review-footer">- คุณอภิชัย</div>
+                </div>
+                <div class="review">
+                    <h3>ลูกค้า 4</h3>
+                    <p>“ใช้งานเว็บไซต์นี้แล้วสะดวกสบายจริงๆ ค่ะ การจัดส่งก็รวดเร็วมาก ฉันไม่ต้องรอนาน”</p>
+                    <div class="review-footer">- คุณลลิตา</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 เว็บไซต์ของเรา. สงวนลิขสิทธิ์.</p>
+    </footer>
+</body>
+</html>
